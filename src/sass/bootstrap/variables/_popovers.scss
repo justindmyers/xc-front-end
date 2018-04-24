@@ -1,0 +1,27 @@
+// Popovers
+$popover-padding: rem-calc(30);
+
+$popover-font-size:                 $font-size-sm !default;
+$popover-bg:                        $white !default;
+$popover-max-width:                 none !default;
+$popover-border-width:              1px !default;
+$popover-border-color:              rgba($black, .05) !default;
+$popover-border-radius:             $border-radius-lg !default;
+$popover-box-shadow:                $aha-box-shadow !default;
+
+$popover-header-bg:                 $white !default;
+$popover-header-color:              $headings-color !default;
+
+// Do a little finagaling with the values to be able to use the padding short-hand
+$popover-header-padding-y:          $popover-padding $popover-padding !default;
+$popover-header-padding-x:          0 $popover-padding !default;
+
+$popover-body-color:                $body-color !default;
+$popover-body-padding-y:            ($popover-padding / 2) $popover-padding !default;
+$popover-body-padding-x:            $popover-padding $popover-padding !default;
+
+$popover-arrow-width:               1rem !default;
+$popover-arrow-height:              .5rem !default;
+$popover-arrow-color:               $popover-bg !default;
+
+$popover-arrow-outer-color:         fade-in($popover-border-color, .05) !default;

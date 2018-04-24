@@ -1,0 +1,10 @@
+// Import Bootstrap functions/mixins
+@import "~bootstrap/scss/functions";
+@import "~bootstrap/scss/mixins";
+
+// Import local
+@import "variables";
+@import "functions";
+@import "mixins";
+
+@import "src/sass/bootstrap/variables/variables";
