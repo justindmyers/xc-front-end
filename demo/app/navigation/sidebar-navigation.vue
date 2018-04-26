@@ -1,6 +1,6 @@
 <template>
     <div class="c-sidebar-nav">
-        <ul class="nav flex-column">
+        <ul class="c-sidebar-nav__list">
             <li v-for="(path, index) in paths" v-bind:key="index" class="nav-item">
                 <span class="c-sidebar-nav__header" >{{ path.name }}</span>
 

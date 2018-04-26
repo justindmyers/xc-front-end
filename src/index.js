@@ -6,8 +6,8 @@
 import 'es6-shim';
 import Vue from 'vue';
 
-import 'src/sass/style.scss';
-import 'bootstrap-vue/dist/bootstrap-vue.css';
+// import 'src/sass/style.scss';
+// import 'bootstrap-vue/dist/bootstrap-vue.css';
 
 import './app/index.js';
 
