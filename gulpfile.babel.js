@@ -11,6 +11,8 @@ import webpackHotMiddleware from 'webpack-hot-middleware';
 import colorsSupported from 'supports-color';
 import historyApiFallback from 'connect-history-api-fallback';
 
+import glob from 'glob-promise';
+
 let root = 'src';
 let appRoot = 'app';
 
@@ -31,6 +33,33 @@ gulp.task('clean', (cb) => {
         gutil.log('[clean]', paths);
         cb();
     });
+});
+
+gulp.task('test', (cb) => {
+    function build() {
+        const files = {};
+
+        glob(`demo/**/*.{vue,js}`, {
+            cwd: './'
+            // ignore: this.options.ignore
+        }).then((contents) => {
+            contents.forEach(f => {
+                const key = f.replace(/\.(js|vue)$/, '');
+
+                // eslint-disable-next-line
+                console.log(f);
+
+                if(/\.vue$/.test(f) || !files[key]) {
+                    files[key] = f.replace(/(['|"])/g, '\\$1');
+                }
+            });
+
+            // eslint-disable-next-line
+            console.log(files); 
+        });
+    }
+
+    build();
 });
 
 gulp.task('demo-prod', ['clean'], (cb) => {

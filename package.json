@@ -75,6 +75,7 @@
     "bootstrap-vue": "^1.4.1",
     "core-js": "^2.5.4",
     "es6-shim": "^0.35.3",
+    "glob-promise": "^3.4.0",
     "popper.js": "^1.12.9",
     "vue": "^2.5.13",
     "vue-router": "^3.0.1",
