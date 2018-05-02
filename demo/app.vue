@@ -1,7 +1,11 @@
 <template>
     <div id="app">
         <b-navbar toggleable="md" type="dark" variant="dark" class="c-nav sticky-top">
-            <b-navbar-toggle target="nav_collapse"></b-navbar-toggle>
+            <b-navbar-toggle class="c-nav__toggle" target="nav_collapse">
+                <span class="c-nav__bar"></span>
+                <span class="c-nav__bar"></span>
+                <span class="c-nav__bar"></span>
+            </b-navbar-toggle>
 
             <b-navbar-brand class="c-nav__logo" v-bind:to="'/'">Component Library</b-navbar-brand>
 
