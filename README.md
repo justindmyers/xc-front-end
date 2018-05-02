@@ -1,39 +1,41 @@
-# ISACA Component Library
+# AHA Component Library
+
+Documentation for the AHA Component Library
 
 ## Getting Started
 
-### Prerequisites
+The AHA Component Library is built from the Heart.org Front-end repository.
 
-Node Package Manager (NPM)
+To build and run this project locally, clone the repository from:
+[`https://aha-bt.visualstudio.com/Sitecore/Heart.org/_git/Heart.org%20Front-End`](https://aha-bt.visualstudio.com/Sitecore/Heart.org/_git/Heart.org%20Front-End)
 
-### Installing
+In the main project directory, run `npm install` to install all dependencies
 
-Use Node Package Manager (NPM) to install all project dependencies.
+## Prerequisites
+* NodeJS
 
-```
-$ npm install
-```
+## Build Tasks
 
-Use the Gulp task to spin up your local Dev environment.
 
-```
-$ gulp dev
-```
+* `gulp dev`  
+Runs the development server and allows you to develop locally
 
-View the Demo, go to localhost:3000 in your browser. 
+* `gulp demo-prod`  
+Builds the distribution assets for use on digitaldocs.heart.org
 
-## Deployment
+* `gulp prod`  
+Builds the distribution assets for use on heart.org
 
-Use the Node Package Manager (NPM) to install all project dependencies.
+## Common Build Errors
 
-```
-$ npm install
-```
+If you receive the build error `Expected indentation of 0 spaces` when building for the first time, you can fix with the following methods
 
-Use the Gulp task to run Webpack bundling process.
+ * **VS Code**  
+In the bottom-right corner of the editor, click on CRLF and change to LF
 
-```
-$ gulp prod
-```
+* **Visual Studio**  
+File > Save As > Click the dropdown arrow > Save with encoding.  
+Change the line endings from CRLF to LF
 
-Hook up CSS/JS that was outputted into the /dist folder to any existing bundling service(s) of your overall Website solution.
+* **Notepad++**  
+Do a find &amp; replace of `\r\n` to `\n` in the offending files.

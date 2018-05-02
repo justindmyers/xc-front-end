@@ -6,7 +6,8 @@ Documentation for the AHA Component Library
 
 The AHA Component Library is built from the Heart.org Front-end repository.
 
-To build and run this project locally, clone the repository from: [`https://aha-bt.visualstudio.com/Sitecore/Heart.org/_git/Heart.org%20Front-End`](https://aha-bt.visualstudio.com/Sitecore/Heart.org/_git/Heart.org%20Front-End)
+To build and run this project locally, clone the repository from:
+[`https://aha-bt.visualstudio.com/Sitecore/Heart.org/_git/Heart.org%20Front-End`](https://aha-bt.visualstudio.com/Sitecore/Heart.org/_git/Heart.org%20Front-End)
 
 In the main project directory, run `npm install` to install all dependencies
 

@@ -79,6 +79,11 @@ body > iframe {
         margin-top: 40px;
         margin-bottom: 20px;
     }
+
+    a {
+        overflow-wrap: break-word;
+        word-wrap: break-word;
+    }
 }
 
 .hljs {
