@@ -1,10 +1,10 @@
-# AHA Component Library
+# ISACA Component Library
 
-Documentation for the AHA Component Library
+Documentation for the ISACA Component Library
 
 ## Getting Started
 
-The AHA Component Library is built from the Heart.org Front-end repository.
+The ISACA Component Library is built from the Heart.org Front-end repository.
 
 To build and run this project locally, clone the repository from:
 [`https://aha-bt.visualstudio.com/Sitecore/Heart.org/_git/Heart.org%20Front-End`](https://aha-bt.visualstudio.com/Sitecore/Heart.org/_git/Heart.org%20Front-End)
