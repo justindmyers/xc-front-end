@@ -1,12 +1,11 @@
 import ComponentNavigation from './component-navigation';
 
-import Alert from 'demo/pages/components/alert.vue';
-import Card from 'demo/pages/components/card.vue';
+import LeaderSnapshot from 'demo/pages/components/leader-snapshot-item.vue';
 
 const ComponentPages = [
     {
         path: '/components',
-        name: 'Components',
+        name: 'CLP',
         components: {
             default: {
                 template: '<router-view></router-view>'
@@ -16,18 +15,13 @@ const ComponentPages = [
         children: [
             {
                 path: '',
-                redirect: 'alert',
+                redirect: 'leader-snapshot-item',
                 excludeFromNav: true
             },
             {
-                path: 'alert',
-                name: 'Alert',
-                component: Alert
-            },
-            {
-                path: 'card',
-                name: 'Card',
-                component: Card
+                path: 'leader-snapshot-item',
+                name: 'Leader Snapshot Item',
+                component: LeaderSnapshot
             }
             /*
             {
