@@ -35,6 +35,7 @@
     "expect": "^22.1.0",
     "extract-text-webpack-plugin": "^3.0.0",
     "file-loader": "^1.1.6",
+    "font-awesome": "^4.6.3",
     "gulp": "^3.9.0",
     "gulp-rename": "^1.2.2",
     "gulp-template": "^5.0.0",
