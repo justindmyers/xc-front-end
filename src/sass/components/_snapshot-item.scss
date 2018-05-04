@@ -1,8 +1,22 @@
 @import "~src/sass/base";
 
 .c-snapshot-item {
-    display: block;
-    height: 200px;
-    width: 200px;
-    background: #000;
+    text-align: center;
+
+    &__heading {
+        font-size: 18px;
+    }
+
+    &__description {
+        font-size: 18px;
+    }
+
+    &__mailto {
+        color: #a30046;
+        
+        &:hover,
+        &:focus {
+            text-decoration: underline;
+        }
+    }
 }
