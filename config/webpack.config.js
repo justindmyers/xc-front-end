@@ -98,6 +98,12 @@ module.exports = {
                 failOnWarning: false,
                 failOnError: true
             }
+        }),
+
+        new webpack.ProvidePlugin({
+            $: 'jquery',
+            JQuery: 'jquery',
+            jQuery: 'jquery'
         })
     ]
 };
