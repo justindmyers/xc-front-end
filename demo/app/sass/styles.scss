@@ -65,6 +65,10 @@ body > iframe {
 }
 
 .c-markdown {
+    a {
+        word-break: break-all;
+    }
+
     h1 {
         color: #565656;
         font-family: 'Montserrat', 'Arial', sans-serif;

@@ -28,7 +28,7 @@
         }
     }
 
-    @include media-breakpoint-down(lg) {
+    @media (max-width: 992px) {
         .component {
             margin: 40px 0;
         }
