@@ -191,7 +191,8 @@ body > iframe {
     top: 0;
     align-items: center;
     height: 60px;
-
+    z-index: 1000;
+    
     &__logo {
         color: #fff;
         text-transform: uppercase;
