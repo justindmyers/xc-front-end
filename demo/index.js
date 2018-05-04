@@ -8,6 +8,9 @@ import VueScrollTo from 'vue-scrollto';
 // Import production application components
 import '@/index.js';
 
+// Import product application styles
+import 'src/sass/style.scss';
+
 import 'bootstrap-vue/dist/bootstrap-vue.css';
 import './app/sass/styles.scss';
 

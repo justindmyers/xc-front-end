@@ -65,6 +65,10 @@ body > iframe {
 }
 
 .c-markdown {
+    a {
+        word-break: break-all;
+    }
+
     h1 {
         color: #565656;
         font-family: 'Montserrat', 'Arial', sans-serif;
@@ -139,8 +143,7 @@ body > iframe {
     }
 }
 
-@media all and (-ms-high-contrast:none)
-{
+@media all and (-ms-high-contrast:none) {
     .app__sidebar {
         position: static;
         top: auto;
@@ -188,7 +191,8 @@ body > iframe {
     top: 0;
     align-items: center;
     height: 60px;
-
+    z-index: 1000;
+    
     &__logo {
         color: #fff;
         text-transform: uppercase;
@@ -201,6 +205,37 @@ body > iframe {
     }
 }
 
+@media (max-width: 768px) {
+    .c-nav {
+        height: auto;
+        background: #29363d;
+        flex-wrap: wrap;
+
+        &__logo {
+            order: 1;
+            flex: 1;
+            text-align: left;
+        }
+
+        &__toggle {
+            background: transparent;
+            outline: none;
+            border: 1px solid #828282;
+            order: 2;
+            margin-right: 20px;
+        }
+
+        &__bar {
+            background: #cecece;
+            display: block;
+            width: 22px;
+            height: 2px;
+            border-radius: 2px;
+            margin: 5px 0;
+        }
+    }
+}
+
 .c-navbar {
     display: flex;
     list-style-type: none;
@@ -210,6 +245,8 @@ body > iframe {
     &__container {
         flex: 1;
         justify-content: flex-end;
+        transition: all .2s ease-out;
+        overflow: hidden;
     }
 
     &__item {
@@ -219,5 +256,23 @@ body > iframe {
     &__link {
         text-decoration: none;
         color: #333;
+    }
+}
+
+@media (max-width: 768px) {
+    .c-navbar {
+        flex-direction: column;
+        padding: 5px 0;
+
+        &__container  {
+            order: 3;
+            flex: none;
+            width: 100%;
+            background: #ecf0f2;
+        }
+
+        &__item {
+            padding: 5px 15px;
+        }
     }
 }
