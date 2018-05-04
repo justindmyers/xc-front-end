@@ -1,11 +1,19 @@
 <template>
     <div class="c-snapshot-item">
-        <img class="c-snapshot-item__img" src="" />
+
+        <div class="c-snapshot-item__img-wrap">
+            <!-- This image could also reference the desired icon for P, VP, Sec, etc. -->
+            <img class="c-snapshot-item__img" src="assets/images/mauricemoss.jpg" />
+        </div>
+
         <h3 class="c-snapshot-item__heading">Mr. Michael Podemski</h3>
+
         <p class="c-snapshot-item__description">President</p>
-        <a class="c-snapshot-item__mailto" href="mailto:">
+        
+        <a class="c-snapshot-item__mailto" href="mailto:" title="Email Chapter Leader">
             <span class="fa fa-envelope"></span>
             Send Email
         </a>
+
     </div>
 </template>
