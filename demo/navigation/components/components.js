@@ -1,5 +1,6 @@
 import ComponentNavigation from './component-navigation';
 
+import LeaderList from 'demo/pages/components/leader-list.vue';
 import LeaderSnapshot from 'demo/pages/components/leader-snapshot-item.vue';
 
 const ComponentPages = [
@@ -15,8 +16,13 @@ const ComponentPages = [
         children: [
             {
                 path: '',
-                redirect: 'leader-snapshot-item',
+                redirect: 'leader-list',
                 excludeFromNav: true
+            },
+            {
+                path: 'leader-list',
+                name: 'Leader List',
+                component: LeaderList
             },
             {
                 path: 'leader-snapshot-item',
