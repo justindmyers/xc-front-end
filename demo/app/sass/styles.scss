@@ -1,14 +1,12 @@
-// Import live styling assets
+// Import font awesomer
 $fa-font-path:  "./assets/fonts";
 @import '~font-awesome/scss/font-awesome';
 
-.app {
-    &__content {
-        @import '../../live-assets/main';
-        @import 'src/sass/style';
-    }
+// Import live styling assets
+.app__content {
+    @import '../../live-assets/main';
+    @import 'src/sass/style';
 }
-
 
 html, body {
     margin: 0;
