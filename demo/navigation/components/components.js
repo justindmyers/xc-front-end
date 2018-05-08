@@ -1,5 +1,6 @@
 import ComponentNavigation from './component-navigation';
 
+import ButtonLinkBar from 'demo/pages/components/button-link-bar.vue';
 import LeaderList from 'demo/pages/components/leader-list.vue';
 import LeaderSnapshot from 'demo/pages/components/leader-snapshot-item.vue';
 
@@ -18,6 +19,11 @@ const ComponentPages = [
                 path: '',
                 redirect: 'leader-list',
                 excludeFromNav: true
+            },
+            {
+                path: 'button-link-bar',
+                name: 'Button Link Bar',
+                component: ButtonLinkBar
             },
             {
                 path: 'leader-list',
