@@ -1,5 +1,6 @@
 .xc-flex__grid {
     display: flex;
+    flex-wrap: wrap;
 
     &.-top {
         align-items: flex-start; 

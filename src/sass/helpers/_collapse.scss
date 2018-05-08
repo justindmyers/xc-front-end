@@ -1,0 +1,9 @@
+.h-collapse {
+    max-height: 0;
+    overflow: hidden;
+    transition: all .2s ease-in;
+
+    &--expanded {
+        max-height: 100%;
+    }
+}

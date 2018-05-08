@@ -10,6 +10,9 @@ import VueScrollTo from 'vue-scrollto';
 // Import production application components
 import '@/index.js';
 
+// Manual import for src scripts
+import toggleCollapse from 'src/app/components/toggleCollapse.js';
+
 import 'bootstrap-vue/dist/bootstrap-vue.css';
 import './app/sass/styles.scss';
 
@@ -32,6 +35,12 @@ Vue.component('sidebar-navigation', SidebarNavigation);
 
 const router = new VueRouter({
     routes
+});
+
+router.afterEach((to, from) => {
+    setTimeout(() => {
+        toggleCollapse();
+    }, 500);
 });
 
 new Vue({

@@ -1,4 +1,3 @@
-import Vue from 'vue';
-import BootstrapVue from 'bootstrap-vue';
+import toggleCollapse from './components/toggleCollapse.js';
 
-Vue.use(BootstrapVue);
+toggleCollapse();
