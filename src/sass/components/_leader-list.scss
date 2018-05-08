@@ -14,6 +14,10 @@
         font-size: 1rem;
         cursor: pointer;
         color: #a30046;
+
+        &.active {
+            display: none;
+        }
     }
 
     &__icon {

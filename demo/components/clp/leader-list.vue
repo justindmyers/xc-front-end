@@ -41,7 +41,7 @@
 
                 </div>
 
-                <div class="c-leader-list__hidden-wrap xc-flex__grid h-collapse" id="leaderOverflow">
+                <div class="c-leader-list__hidden-wrap xc-flex__grid h-collapse h-collapse--collapsed" id="leaderOverflow">
 
                     <div class="xc-flex__cell -col-6of12 -col-sm-3of12 -col-lg-3of12">
                         <leader-snapshot-item></leader-snapshot-item>
