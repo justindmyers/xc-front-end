@@ -117,7 +117,7 @@ body > iframe {
     }
 
     &__content {
-        padding: 40px;
+        // padding: 40px;
     }
 }
 
@@ -206,6 +206,7 @@ body > iframe {
     top: 0;
     align-items: center;
     height: 60px;
+    z-index: 1039;
 
     &__logo {
         color: #fff;
