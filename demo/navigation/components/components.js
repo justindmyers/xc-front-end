@@ -1,6 +1,7 @@
 import ComponentNavigation from './component-navigation';
 
 import ButtonLinkBar from 'demo/pages/components/button-link-bar.vue';
+import DocumentRepository from 'demo/pages/components/document-repository.vue';
 import LeaderList from 'demo/pages/components/leader-list.vue';
 import LeaderSnapshot from 'demo/pages/components/leader-snapshot-item.vue';
 import Updates from 'demo/pages/components/updates.vue';
@@ -25,6 +26,11 @@ const ComponentPages = [
                 path: 'button-link-bar',
                 name: 'Button Link Bar',
                 component: ButtonLinkBar
+            },
+            {
+                path: 'document-repository',
+                name: 'Document Repository',
+                component: DocumentRepository
             },
             {
                 path: 'leader-list',

@@ -1,0 +1,50 @@
+.c-btn {
+    background: #a30046;
+    cursor: pointer;
+    font-family: "Roboto Condensed", "Roboto", sans-serif;
+    color: #fff;
+    font-size: 1rem;
+    font-weight: bold;
+    border: 0;
+    border-radius: 4px;
+    padding: 10px 18px 12px;
+    box-shadow: inset 0px -2px 0px 0px #700030;
+
+    &:hover,
+    &:focus {
+        text-decoration: underline;
+    }
+
+    &:active {
+        background: #700030;
+        box-shadow: inset 0px -2px 0px 0px #a30046;
+    }
+
+    &--mx1 {
+        margin: 0 1rem;
+    }
+
+    &--mx2 {
+        margin: 0 2rem;
+    }
+
+    &--mx3 {
+        margin: 0 3rem;
+    }
+
+    &--mxauto {
+        margin: 0 auto;
+    }
+
+    &--my1 {
+        margin: 1rem 0;
+    }
+
+    &--my2 {
+        margin: 2rem 0;
+    }
+
+    &--my3 {
+        margin: 3rem 0;
+    }
+}

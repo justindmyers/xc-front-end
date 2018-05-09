@@ -1,9 +1,10 @@
 .c-leader-list {
+    padding: 2rem 0;
     text-align: center;
 
     &__heading {
-        font-size: 2rem;
-        margin: 2rem 1rem 1rem;
+        font-size: 1.6rem;
+        margin: 1rem 0;
         line-height: 2rem
     }
 
@@ -28,8 +29,7 @@
 @media (min-width: 768px) {
     .c-leader-list {
         &__heading {
-            font-size: 3rem;
-            margin: 2rem 0 3rem 0;
+            font-size: 2rem;
         }
     }
 }

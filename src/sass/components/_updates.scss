@@ -1,11 +1,13 @@
 .c-updates {
+    padding: 2rem 0;
+    background-color: #3f4b55;
     color: #fff;
 
     &__heading {
         display: inline-block;
         color: #fff; 
         font-size: 1.6rem;
-        margin: 1.6rem 0; 
+        margin: 1rem 0; 
     }
 
     &__link {
@@ -14,7 +16,7 @@
         &--view-all {
             float: right;
             font-size: .8rem;
-            margin: 2.3rem 0;
+            margin: 1.7rem 0;
         }
     }
 
@@ -25,7 +27,7 @@
     &__item {
         display: flex;
         clear: both;
-        margin-bottom: 3rem;
+        margin: 1.5rem;
     }
 
     &__date {
@@ -56,5 +58,17 @@
 
     &__txt {
         margin: 0;
+    }
+}
+
+@media (min-width: 768px) {
+    .c-updates {
+        &__heading {
+            font-size: 2rem;
+        }
+
+        &__link {
+            margin: 2rem 0;
+        }
     }
 }

@@ -1,11 +1,11 @@
 <template>
-    <!-- The background color on root div should be a background texture. Couldn't find appropriate texture for Demo purposes -->
-    <div class="c-updates xc-flex__grid -center" style="background: #3f4b55;">
+    <!-- The background color on root div could also be a background texture. Couldn't find appropriate texture for Demo purposes -->
+    <div class="c-updates xc-flex__grid -center">
         <div class="c-updates__wrap xc-flex__cell -col-10of12">
 
             <h2 class="c-updates__heading">Recent Updates</h2>
 
-            <a class="c-updates__link c-updates__link--view-all">
+            <a class="c-updates__link c-updates__link--view-all" href="#">
                 View All <span class="c-updates__icon fa fa-angle-right"></span>    
             </a>
 
