@@ -3,6 +3,7 @@ import ComponentNavigation from './component-navigation';
 import ButtonLinkBar from 'demo/pages/components/button-link-bar.vue';
 import LeaderList from 'demo/pages/components/leader-list.vue';
 import LeaderSnapshot from 'demo/pages/components/leader-snapshot-item.vue';
+import Updates from 'demo/pages/components/updates.vue';
 
 const ComponentPages = [
     {
@@ -17,7 +18,7 @@ const ComponentPages = [
         children: [
             {
                 path: '',
-                redirect: 'leader-list',
+                redirect: 'button-link-bar',
                 excludeFromNav: true
             },
             {
@@ -34,6 +35,11 @@ const ComponentPages = [
                 path: 'leader-snapshot-item',
                 name: 'Leader Snapshot Item',
                 component: LeaderSnapshot
+            },
+            {
+                path: 'updates',
+                name: 'Updates',
+                component: Updates
             }
             /*
             {

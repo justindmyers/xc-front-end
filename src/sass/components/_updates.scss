@@ -1,0 +1,60 @@
+.c-updates {
+    color: #fff;
+
+    &__heading {
+        display: inline-block;
+        color: #fff; 
+        font-size: 1.6rem;
+        margin: 1.6rem 0; 
+    }
+
+    &__link {
+        color: #fff;
+
+        &--view-all {
+            float: right;
+            font-size: .8rem;
+            margin: 2.3rem 0;
+        }
+    }
+
+    &__icon {
+        margin: 0 .2rem;
+    }
+
+    &__item {
+        display: flex;
+        clear: both;
+        margin-bottom: 3rem;
+    }
+
+    &__date {
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        justify-content: center;
+        text-align: center;
+        border-right: 1px solid #fff;
+        padding-right: 1.2rem;
+    }
+
+    &__day {
+        font-size: 1.6rem;
+    }
+
+    &__month-year {
+        font-size: .8rem;
+        font-weight: normal;
+    }
+
+    &__description {
+        display: flex;
+        align-items: center;
+        flex: 1;
+        padding-left: 1.2rem;
+    }
+
+    &__txt {
+        margin: 0;
+    }
+}

@@ -50,7 +50,7 @@
         flex-direction: row;
     }
 
-    @media (min-width: 768px) and (max-width: 1023px) {
+    @media (min-width: 768px) {
         &.-sm-top {
             align-items: flex-start; 
         }
@@ -248,7 +248,7 @@
         width: calc((100 * 12 / 12) * 1%);
     }
 
-    @media (min-width: 768px) and (max-width: 1023px) {
+    @media (min-width: 768px) {
 
         // 10 Column Grid
         &.-col-sm-1of10 {
