@@ -22,6 +22,11 @@
             background: #fff;
         }
 
+        &:hover,
+        &:focus {
+            text-decoration: none;
+        }
+
         &--border-none {            
             &:after {
                 display: none;
@@ -30,14 +35,15 @@
     }
 
     &__icon {
-        max-width: 100%;
+        max-width: 100px;
         margin-bottom: 1rem;
     }
 
-    &__link {
+    &__heading {
         display: flex;
         align-items: center;
         justify-content: center;
+        height: 45px;
         max-width: 100px;
         font-family: 'Roboto', sans-serif;
         font-weight: bold;
@@ -46,12 +52,19 @@
         line-height: 1rem;
     }
 
-    &__link-icon {
+    &__heading-icon {
         display: inline-block;
         font-size: 20px;
         color: #a30046;
         margin-left: .4rem;
         vertical-align: -2px;
+    }
+
+    &__description {
+        font-size: .9rem;
+        color: #525252;
+        max-width: 75%;
+        margin: .5rem 0 0;
     }
 }
 
