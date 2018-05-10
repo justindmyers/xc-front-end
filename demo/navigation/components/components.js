@@ -2,6 +2,7 @@ import ComponentNavigation from './component-navigation';
 
 import ButtonLinkBar from 'demo/pages/components/button-link-bar.vue';
 import DocumentRepository from 'demo/pages/components/document-repository.vue';
+import MemberBreakdown from 'demo/pages/components/member-breakdown.vue';
 import LeaderList from 'demo/pages/components/leader-list.vue';
 import LeaderSnapshot from 'demo/pages/components/leader-snapshot-item.vue';
 import Updates from 'demo/pages/components/updates.vue';
@@ -36,6 +37,11 @@ const ComponentPages = [
                 path: 'document-repository',
                 name: 'Document Repository',
                 component: DocumentRepository
+            },
+            {
+                path: 'member-breakdown',
+                name: 'Member Breakdown',
+                component: MemberBreakdown
             },
             {
                 path: 'leader-snapshot-item',
