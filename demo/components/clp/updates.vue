@@ -1,6 +1,6 @@
 <template>
     <!-- The background color on root div could also be a background texture. Couldn't find appropriate texture for Demo purposes -->
-    <div class="c-updates xc-flex__grid -center">
+    <div class="c-updates xc-flex__grid -center -middle">
         <div class="c-updates__wrap xc-flex__cell -col-10of12">
 
             <h2 class="c-updates__heading">Recent Updates</h2>

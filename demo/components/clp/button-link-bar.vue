@@ -1,43 +1,51 @@
 <template>
-    <div class="c-button-links xc-flex__grid -center ">
+    <div class="c-button-links xc-flex__grid -center -middle">
 
-        <a class="c-button-links__item xc-flex__cell -col-5of10 -col-sm-2of10 -col-lg-2of10" href="#">
-            <img class="c-button-links__icon" src="/assets/images/icons/reports.png" alt="Reports" />
-            <div class="c-button-links__heading">
-                Reports <span class="c-button-links__heading-icon fa fa-angle-right"></span>
-            </div>
-            <p class="c-button-links__description">The latest from the industry and ISACA</p>
-        </a>
+        <div class="c-button-links__wrap xc-flex__cell -col-12of12">
 
-        <a class="c-button-links__item c-button-links__item--xs-border-none xc-flex__cell -col-5of10 -col-sm-2of10 -col-lg-2of10" href="#">
-            <img class="c-button-links__icon" src="/assets/images/icons/upload-cpe.png" alt="Upload CPE" />
-            <div class="c-button-links__heading">
-                Upload CPE <span class="c-button-links__heading-icon fa fa-angle-right"></span>
-            </div>
-            <p class="c-button-links__description">Up-to date information and expertise on core IT challenges</p>
-        </a>
+            <div class="xc-flex__grid -center">
 
-        <a class="c-button-links__item xc-flex__cell -col-5of10 -col-sm-2of10 -col-lg-2of10 " href="#">
-            <img class="c-button-links__icon" src="/assets/images/icons/renewal-message.png" alt="Renewal Message" />
-            <div class="c-button-links__heading">
-                Renewal Message <span class="c-button-links__heading-icon fa fa-angle-right"></span>
-            </div>
-            <p class="c-button-links__description">In-depth articles on pressing industry topics</p>
-        </a>
+                <a class="c-button-links__item xc-flex__cell -col-5of10 -col-sm-2of10 -col-lg-2of10" href="#">
+                    <img class="c-button-links__icon" src="/assets/images/icons/reports.png" alt="Reports" />
+                    <div class="c-button-links__heading">
+                        Reports <span class="c-button-links__heading-icon fa fa-angle-right"></span>
+                    </div>
+                    <p class="c-button-links__description">The latest from the industry and ISACA</p>
+                </a>
 
-        <a class="c-button-links__item c-button-links__item--xs-border-none xc-flex__cell -col-5of10 -col-sm-2of10 -col-lg-2of10" href="#">
-            <img class="c-button-links__icon" src="/assets/images/icons/resources.png" alt="Resources" />
-            <div class="c-button-links__heading">
-                Resources <span class="c-button-links__heading-icon fa fa-angle-right"></span>
-            </div>
-        </a>
+                <a class="c-button-links__item c-button-links__item--xs-border-none xc-flex__cell -col-5of10 -col-sm-2of10 -col-lg-2of10" href="#">
+                    <img class="c-button-links__icon" src="/assets/images/icons/upload-cpe.png" alt="Upload CPE" />
+                    <div class="c-button-links__heading">
+                        Upload CPE <span class="c-button-links__heading-icon fa fa-angle-right"></span>
+                    </div>
+                    <p class="c-button-links__description">Up-to date information and expertise on core IT challenges</p>
+                </a>
 
-        <a class="c-button-links__item c-button-links__item--border-none c-button-links__item--xs-text-right xc-flex__cell -col-10of10 -col-sm-2of10 -col-lg-2of10" href="#">
-            <img class="c-button-links__icon" src="/assets/images/icons/marketing-storefront.png" alt="Marketing Storefront" />
-            <div class="c-button-links__heading">
-                Marketing Storefront <span class="c-button-links__heading-icon fa fa-angle-right"></span>
+                <a class="c-button-links__item xc-flex__cell -col-5of10 -col-sm-2of10 -col-lg-2of10 " href="#">
+                    <img class="c-button-links__icon" src="/assets/images/icons/renewal-message.png" alt="Renewal Message" />
+                    <div class="c-button-links__heading">
+                        Renewal Message <span class="c-button-links__heading-icon fa fa-angle-right"></span>
+                    </div>
+                    <p class="c-button-links__description">In-depth articles on pressing industry topics</p>
+                </a>
+
+                <a class="c-button-links__item c-button-links__item--xs-border-none xc-flex__cell -col-5of10 -col-sm-2of10 -col-lg-2of10" href="#">
+                    <img class="c-button-links__icon" src="/assets/images/icons/resources.png" alt="Resources" />
+                    <div class="c-button-links__heading">
+                        Resources <span class="c-button-links__heading-icon fa fa-angle-right"></span>
+                    </div>
+                </a>
+
+                <a class="c-button-links__item c-button-links__item--border-none c-button-links__item--xs-text-right xc-flex__cell -col-10of10 -col-sm-2of10 -col-lg-2of10" href="#">
+                    <img class="c-button-links__icon" src="/assets/images/icons/marketing-storefront.png" alt="Marketing Storefront" />
+                    <div class="c-button-links__heading">
+                        Marketing Storefront <span class="c-button-links__heading-icon fa fa-angle-right"></span>
+                    </div>
+                </a>
+
             </div>
-        </a>
+
+        </div>
 
     </div>
 </template>

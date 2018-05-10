@@ -1,7 +1,10 @@
 .c-document-repository {
     background-color: #364048;
-    padding: 2rem 0;
 
+    &__wrap {
+        padding: 2rem 0;
+    }
+    
     &__heading {
         color: #fff;
         font-size: 1.6rem;

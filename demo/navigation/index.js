@@ -2,8 +2,8 @@
 
 import HomePages from './home/home.js';
 import ComponentPages from './components/components.js';
-// import LayoutPages from './routes/layouts.js';
+import LayoutPages from './layout/layouts.js';
 
-const routes = [].concat(HomePages, ComponentPages);
+const routes = [].concat(HomePages, ComponentPages, LayoutPages);
 
 export default routes;

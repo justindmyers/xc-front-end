@@ -1,8 +1,11 @@
 .c-updates {
-    padding: 2rem 0;
     background-color: #3f4b55;
     color: #fff;
 
+    &__wrap {
+        padding: 2rem 0;
+    }
+    
     &__heading {
         display: inline-block;
         color: #fff; 

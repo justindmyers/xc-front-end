@@ -1,14 +1,6 @@
 import LayoutNavigation from './layout-navigation';
 
-import Header from 'demo/pages/layouts/header.vue';
-import Footer from 'demo/pages/layouts/footer.vue';
-import Article from 'demo/pages/layouts/article.vue';
-import LatestNews from 'demo/pages/layouts/latest-news.vue';
-import NewsListing from 'demo/pages/layouts/news-listing.vue';
-import Recipe from 'demo/pages/layouts/recipe.vue';
-import Search from 'demo/pages/layouts/search.vue';
-import RecipeBox from 'demo/pages/layouts/recipe-box.vue';
-import SurvivorStory from 'demo/pages/layouts/survivor-story.vue';
+import CLPDashboard from 'demo/pages/layouts/clp-dashboard.vue';
 
 const LayoutPages = [
     {
@@ -25,52 +17,12 @@ const LayoutPages = [
             {
                 path: '',
                 excludeFromNav: true,
-                redirect: 'header'
+                redirect: 'clp-dashboard'
             },
             {
-                path: 'header',
-                name: 'Header',
-                component: Header
-            },
-            {
-                path: 'footer',
-                name: 'Footer',
-                component: Footer
-            },
-            {
-                path: 'article',
-                name: 'Article',
-                component: Article
-            },
-            {
-                path: 'latest-news',
-                name: 'Latest News',
-                component: LatestNews
-            },
-            {
-                path: 'news-listing',
-                name: 'News Listing',
-                component: NewsListing
-            },
-            {
-                path: 'recipe',
-                name: 'Recipe',
-                component: Recipe
-            },
-            {
-                path: 'search',
-                name: 'Search',
-                component: Search
-            },
-            {
-                path: 'recipe-box',
-                name: 'Recipe Box',
-                component: RecipeBox
-            },
-            {
-                path: 'survivor-story',
-                name: 'Survivor Story',
-                component: SurvivorStory
+                path: 'clp-dashboard',
+                name: 'CLP Dashboard',
+                component: CLPDashboard
             }
         ]
     }

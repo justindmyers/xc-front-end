@@ -1,6 +1,9 @@
 .c-button-links {
     background: #e1e5e6;
-    padding: 3rem 0;
+
+    &__wrap {
+        padding: 2rem 0;
+    }
 
     &__item {
         display: flex;
@@ -9,7 +12,7 @@
         justify-content: flex-start;
         position: relative;
         text-align: center;
-        padding-bottom: 1rem;
+        padding-bottom: 2rem;
 
         &:after {
             content: ' ';

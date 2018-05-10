@@ -28,14 +28,14 @@ const ComponentPages = [
                 component: ButtonLinkBar
             },
             {
+                path: 'updates',
+                name: 'Updates',
+                component: Updates
+            },
+            {
                 path: 'document-repository',
                 name: 'Document Repository',
                 component: DocumentRepository
-            },
-            {
-                path: 'leader-list',
-                name: 'Leader List',
-                component: LeaderList
             },
             {
                 path: 'leader-snapshot-item',
@@ -43,9 +43,9 @@ const ComponentPages = [
                 component: LeaderSnapshot
             },
             {
-                path: 'updates',
-                name: 'Updates',
-                component: Updates
+                path: 'leader-list',
+                name: 'Leader List',
+                component: LeaderList
             }
             /*
             {

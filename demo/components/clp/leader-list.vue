@@ -1,7 +1,7 @@
 <template>
-    <div class="c-leader-list xc-flex__grid -center">        
+    <div class="c-leader-list xc-flex__grid -center -middle">        
 
-        <div class="l-leader-list__wrap xc-flex__cell -column -col-12of12 -col-sm-10of12 -col-lg-10of12">
+        <div class="c-leader-list__wrap xc-flex__cell -column -col-12of12 -col-sm-10of12 -col-lg-10of12">
 
                 <h2 class="c-leader-list__heading">Your Chapter's Leaders</h2>
 

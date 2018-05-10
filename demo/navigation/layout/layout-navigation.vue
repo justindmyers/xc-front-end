@@ -3,7 +3,7 @@
 </template>
 
 <script>
-    import LayoutPages from '../routes/layouts.js';
+    import LayoutPages from '../layout/layouts.js';
 
     export default {
         data() {
