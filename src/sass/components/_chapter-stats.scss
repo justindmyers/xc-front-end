@@ -1,24 +1,24 @@
-.c-document-repository {
-    background-color: #364048;
+.c-chapter-stats {
+    text-align: center;
 
     &__wrap {
         padding: 2rem 0;
     }
-    
+
     &__heading {
-        color: #fff;
         font-size: 1.6rem;
-        margin: 1rem 0; 
+        margin: 1rem 0;
+        line-height: 2rem
     }
 
-    &__description {
-        color: #fff;
+    &__month {
+        font-size: .9rem;
         margin: 1rem 0;
     }
 }
 
 @media (min-width: 768px) {
-    .c-document-repository {
+    .c-chapter-stats {
         &__heading {
             font-size: 2.5rem;
         }

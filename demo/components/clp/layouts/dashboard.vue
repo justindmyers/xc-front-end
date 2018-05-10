@@ -15,6 +15,8 @@
 
         </div>
 
+        <chapter-stats></chapter-stats>
+
         <leader-list></leader-list>
 
     </div>
