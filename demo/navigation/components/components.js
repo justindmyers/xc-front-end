@@ -2,7 +2,6 @@ import ComponentNavigation from './component-navigation';
 
 import ButtonLinkBar from 'demo/pages/components/button-link-bar.vue';
 import DocumentRepository from 'demo/pages/components/document-repository.vue';
-import ChapterStats from 'demo/pages/components/chapter-stats.vue';
 import MemberBreakdown from 'demo/pages/components/member-breakdown.vue';
 import MembeRenewal from 'demo/pages/components/member-renewal.vue';
 import LeaderList from 'demo/pages/components/leader-list.vue';
@@ -39,11 +38,6 @@ const ComponentPages = [
                 path: 'document-repository',
                 name: 'Document Repository',
                 component: DocumentRepository
-            },
-            {
-                path: 'chapter-stats',
-                name: 'Chapter Stats',
-                component: ChapterStats
             },
             {
                 path: 'member-breakdown',

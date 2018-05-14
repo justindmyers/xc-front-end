@@ -1,0 +1,21 @@
+.c-member-renewal {
+    text-align: center;
+
+    &__heading {
+        font-size: 1.6rem;
+        line-height: 1.6rem;
+        font-weight: normal;
+    }
+
+    &__wrap {
+        padding: 2rem 0;
+    }
+}
+
+@media (min-width: 768px) {
+    .c-member-renewal {
+        &__heading {
+            font-size: 2rem;
+        }
+    }
+}
