@@ -1,6 +1,8 @@
 import 'core-js/shim';
 
+// Frameworks/Libraries that already exist on live site
 import 'jquery';
+import 'angular';
 
 import Vue from 'vue';
 import VueRouter from 'vue-router';

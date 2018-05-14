@@ -12,6 +12,7 @@
   "devDependencies": {
     "@vue/test-utils": "^1.0.0-beta.11",
     "ajv": "^5.0.0",
+    "angular": "^1.5.7",
     "autoprefixer": "^7.1.2",
     "babel": "^6.23.0",
     "babel-core": "^6.7.7",
