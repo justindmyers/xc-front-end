@@ -2,7 +2,7 @@ import 'core-js/shim';
 
 // Frameworks/Libraries that already exist on live site
 import 'jquery';
-import 'angular';
+import angular from 'angular';
 
 import Vue from 'vue';
 import VueRouter from 'vue-router';
@@ -13,7 +13,8 @@ import VueScrollTo from 'vue-scrollto';
 import '@/index.js';
 
 // Manual import for src scripts
-import toggleCollapse from 'src/app/components/toggleCollapse.js';
+import memberRenewalInit from 'src/app/components/member-renewal.js';
+import toggleCollapse from 'src/app/components/toggle-collapse.js';
 
 import 'bootstrap-vue/dist/bootstrap-vue.css';
 import './app/sass/styles.scss';
@@ -37,6 +38,11 @@ Vue.component('sidebar-navigation', SidebarNavigation);
 
 const router = new VueRouter({
     routes
+});
+
+router.beforeRouteUpdate((to, from, next) => {
+    memberRenewalInit(angular);
+    next();
 });
 
 router.afterEach((to, from) => {

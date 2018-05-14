@@ -32,6 +32,7 @@
     },
 
     "rules": {
+        "no-console": "off",
         "accessor-pairs": "error",
         "arrow-spacing": ["error", {
             "before": true,

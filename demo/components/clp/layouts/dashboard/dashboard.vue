@@ -1,6 +1,7 @@
 <template>
 
-    <!-- Sitecore Devs: Ignore any 'v-html=""' tags in this file. This is Demo specific and won't be used in the Sitecore component -->
+    <!-- Sitecore Dev: Ignore any 'v-html=""' tags in this file. This is Demo specific and won't be used in the Sitecore component -->
+    <!-- Sitecore Dev: Any comment of a folder path is signifying the location of the component markup that should be in place of the comment -->
 
     <div class="l-clp-dashboard">
 

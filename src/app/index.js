@@ -1,5 +1,5 @@
-import './components/member-renewal.js';
+import memberRenewalInit from './components/member-renewal.js';
+import toggleCollapse from './components/toggle-collapse.js';
 
-import toggleCollapse from './components/toggleCollapse.js';
-
+memberRenewalInit();
 toggleCollapse();
