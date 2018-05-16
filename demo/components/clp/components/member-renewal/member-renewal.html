@@ -1,10 +1,17 @@
-<div class="c-member-renewal xc-flex__grid -center -top" ng-app="memberRenewal" ng-controller="MemberRenewalController">
+<div id="memberRenewal" class="c-member-renewal xc-flex__grid -center -top" ng-controller="MemberRenewalController">
 
     <div class="c-member-renewal__wrap xc-flex__cell -col-10of12">
 
         <h3 class="c-member-renewal__heading">Member Renewal</h3>
 
-        <p>{{test}}</p>
+        <div class="c-member-renewal__slider">
+
+            <div class="c-member-renewal__stat-wrap">
+                <p class="c-member-renewal__year"></p>
+                <p class="c-member-renewal__percent">{{test}}</p>
+            </div>  
+
+        </div> 
 
     </div>
 

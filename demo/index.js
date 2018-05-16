@@ -13,7 +13,7 @@ import VueScrollTo from 'vue-scrollto';
 import '@/index.js';
 
 // Manual import for src scripts
-import memberRenewalInit from 'src/app/components/member-renewal.js';
+// import memberRenewalInit from 'src/app/components/member-renewal.js';
 import toggleCollapse from 'src/app/components/toggle-collapse.js';
 
 import 'bootstrap-vue/dist/bootstrap-vue.css';
@@ -40,13 +40,17 @@ const router = new VueRouter({
     routes
 });
 
-router.beforeRouteUpdate((to, from, next) => {
-    memberRenewalInit(angular);
-    next();
-});
-
 router.afterEach((to, from) => {
     setTimeout(() => {
+        var body = angular.element(document);
+        var $rootScope = body.scope().$root;
+        // $rootScope.$apply();
+        angular.element(document).injector().invoke(function($compile) {
+            var $rootEl = $('#memberRenewal');
+            var html = $compile(angular.copy($rootEl[0]))($rootScope);
+            $rootScope.$digest();
+            $rootEl[0].outerHTML = html[0].outerHTML;
+        });
         toggleCollapse();
     }, 500);
 });
@@ -56,3 +60,5 @@ new Vue({
     render: h => h(App),
     router: router
 });
+
+angular.bootstrap(document, ['memberRenewal']);
