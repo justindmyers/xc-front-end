@@ -2,42 +2,30 @@
 
 <div class="c-leader-list xc-flex__grid -center -middle">        
 
-    <div class="c-leader-list__wrap xc-flex__cell -column -col-12of12 -col-sm-10of12 -col-lg-10of12">
+    <div id="leaderList" class="c-leader-list__wrap xc-flex__cell -column -col-12of12 -col-sm-10of12 -col-lg-10of12" ng-controller="LeaderListController">
 
             <h2 class="c-leader-list__heading">Your Chapter's Leaders</h2>
 
             <div class="xc-flex__grid">
 
                 <div class="xc-flex__cell -col-6of12 -col-sm-3of12">
-                    <leader-snapshot-item></leader-snapshot-item>
-                </div>
+                    <div class="c-snapshot-item">
 
-                <div class="xc-flex__cell -col-6of12 -col-sm-3of12">
-                    <leader-snapshot-item></leader-snapshot-item>
-                </div>
-
-                <div class="xc-flex__cell -col-6of12 -col-sm-3of12">
-                    <leader-snapshot-item></leader-snapshot-item>
-                </div>
-
-                <div class="xc-flex__cell -col-6of12 -col-sm-3of12">
-                    <leader-snapshot-item></leader-snapshot-item>
-                </div>
-
-                <div class="xc-flex__cell -col-6of12 -col-sm-3of12">
-                    <leader-snapshot-item></leader-snapshot-item>
-                </div>
-
-                <div class="xc-flex__cell -col-6of12 -col-sm-3of12">
-                    <leader-snapshot-item></leader-snapshot-item>
-                </div>
-
-                <div class="xc-flex__cell -col-6of12 -col-sm-3of12">
-                    <leader-snapshot-item></leader-snapshot-item>
-                </div>
-
-                <div class="xc-flex__cell -col-6of12 -col-sm-3of12">
-                    <leader-snapshot-item></leader-snapshot-item>
+                        <div class="c-snapshot-item__img-wrap">
+                            <!-- This image could also reference the desired icon for P, VP, Sec, etc. -->
+                            <img class="c-snapshot-item__img" src="assets/images/mauricemoss.jpg" />
+                        </div>
+                    
+                        <h3 class="c-snapshot-item__heading">{{name}}</h3>
+                    
+                        <p class="c-snapshot-item__description">President</p>
+                        
+                        <a class="c-snapshot-item__mailto" href="mailto:" title="Email Chapter Leader">
+                            <span class="fa fa-envelope"></span>
+                            Send Email
+                        </a>
+                    
+                    </div>
                 </div>
 
             </div>

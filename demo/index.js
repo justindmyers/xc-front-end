@@ -44,7 +44,6 @@ router.afterEach((to, from) => {
     setTimeout(() => {
         var body = angular.element(document);
         var $rootScope = body.scope().$root;
-        // $rootScope.$apply();
         angular.element(document).injector().invoke(function($compile) {
             var $rootEl = $('#memberRenewal');
             var html = $compile(angular.copy($rootEl[0]))($rootScope);
