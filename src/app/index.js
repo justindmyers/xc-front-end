@@ -1,5 +1,16 @@
-import memberRenewalInit from './components/member-renewal.js';
-import toggleCollapse from './components/toggle-collapse.js';
+import angular from 'angular';
 
-memberRenewalInit();
+import Components from './components/components.js';
+
+import toggleCollapse from './non-angular/toggle-collapse.js';
 toggleCollapse();
+
+angular.module('app', [
+    Components
+])
+
+    .run(function() {
+        console.log('watup');
+    });
+
+angular.bootstrap(document, ['app']);
