@@ -2,15 +2,12 @@ import 'core-js/shim';
 
 // Frameworks/Libraries that already exist on live site
 import 'jquery';
-// import angular from 'angular';
+import angular from 'angular';
 
 import Vue from 'vue';
 import VueRouter from 'vue-router';
 import BootstrapVue from 'bootstrap-vue';
 import VueScrollTo from 'vue-scrollto';
-
-// Import production application components
-import '@/index.js';
 
 import toggleCollapse from 'src/app/non-angular/toggle-collapse.js';
 
@@ -40,14 +37,16 @@ const router = new VueRouter({
 
 router.afterEach((to, from) => {
     setTimeout(() => {
-        // var body = angular.element(document);
-        // var $rootScope = body.scope().$root;
-        // angular.element(document).injector().invoke(function($compile) {
-        //     var $rootEl = $('#memberRenewal');
-        //     var html = $compile(angular.copy($rootEl[0]))($rootScope);
-        //     $rootScope.$digest();
-        //     $rootEl[0].outerHTML = html[0].outerHTML;
-        // });
+        var body = angular.element(document);
+        var $rootScope = body.scope().$root;
+        angular.element(document).injector().invoke(function($compile) {
+            var $rootEl = $('#ngApp');
+            var html = $compile(angular.copy($rootEl[0]))($rootScope);
+            $rootScope.$digest();
+            if($rootEl.length) {
+                $rootEl[0].outerHTML = html[0].outerHTML;
+            }
+        });
         toggleCollapse();
     }, 500);
 });
@@ -57,3 +56,6 @@ new Vue({
     render: h => h(App),
     router: router
 });
+
+// Import production application components
+require('@/index.js');

@@ -2,24 +2,22 @@ import angular from 'angular';
 
 import controller from './member-renewal.controller.js';
 
-// var memberRenewal = angular.module('app', []);
-
-// memberRenewal.controller('MemberRenewalController', function($scope) {
-//     $scope.test = '83.26%';
-// });
-
 let memberRenewalModule = angular.module('member-renewal', [])
 
-    .directive('member-renewal', () => {
+    .directive('memberRenewal', () => {
         'ngInject';
 
         return {
             retrict: 'EA',
             controller: controller,
-            controllerAs: 'member-renewal',
+            controllerAs: '$ctrl',
             scope: {},
-            bindToController: {
-                test: '='
+            bindToController: true,
+            transclude: true,
+            link: (scope, element, attrs, ctrlr, transclude) => {
+                transclude(scope, (clone, scope) => {
+                    element.append(clone);
+                });
             }
         };
     })

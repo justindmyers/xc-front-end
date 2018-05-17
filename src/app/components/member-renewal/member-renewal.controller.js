@@ -1,7 +1,6 @@
 class MemberRenewalController {
-    constructor($scope, $window) {
+    constructor($window) {
         'ngInject';
-        this.$scope = $scope;
         this.$window = $window;
 
         this.test = '83.68%';

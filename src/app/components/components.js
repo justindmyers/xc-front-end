@@ -6,6 +6,10 @@ let ComponentsModule = angular.module('components', [
     memberRenewal
 ])
 
+    .run(function() {
+        console.log('watup');
+    })
+
     .name;
 
 export default ComponentsModule;
