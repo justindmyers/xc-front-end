@@ -7,7 +7,7 @@
     export default {
         data () {
             return {
-                rawHTML: '<div id="ngApp">' + require('./member-renewal.html') + "</div>"
+                rawHTML: '<div id="ngApp">' + require('./member-renewal.html') + '</div>'
             }
         }
     }

@@ -42,9 +42,10 @@ router.afterEach((to, from) => {
         angular.element(document).injector().invoke(function($compile) {
             var $rootEl = $('#ngApp');
             var html = $compile(angular.copy($rootEl[0]))($rootScope);
-            $rootScope.$digest();
             if($rootEl.length) {
                 $rootEl[0].outerHTML = html[0].outerHTML;
+                // $rootScope.$digest();
+                $rootScope.$apply(() => {});
             }
         });
         toggleCollapse();

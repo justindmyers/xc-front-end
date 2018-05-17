@@ -1,7 +1,27 @@
 import angular from 'angular';
 
-var leaderList = angular.module('leaderList', []);
+import controller from './leader-list.controller.js';
 
-leaderList.controller('LeaderListController', function($scope) {
-    $scope.name = 'Mr. Michael Podemski';
-});
+let memberRenewalModule = angular.module('leader-list', [])
+
+    .directive('leaderList', () => {
+        'ngInject';
+
+        return {
+            retrict: 'EA',
+            controller: controller,
+            controllerAs: '$ctrl',
+            scope: {},
+            bindToController: true,
+            transclude: true,
+            link: (scope, element, attrs, ctrlr, transclude) => {
+                transclude(scope, (clone, scope) => {
+                    element.append(clone);
+                });
+            }
+        };
+    })
+
+    .name;
+
+export default memberRenewalModule;

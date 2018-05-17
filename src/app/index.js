@@ -7,10 +7,6 @@ toggleCollapse();
 
 angular.module('app', [
     Components
-])
-
-    .run(function() {
-        console.log('watup');
-    });
+]);
 
 angular.bootstrap(document, ['app']);

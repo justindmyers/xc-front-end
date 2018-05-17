@@ -1,31 +1,35 @@
 <!--TODO: Revise this so that it is pulling iMIS data and filling the <leader-snapshot-item> Vue component calls with raw html -->
 
-<div class="c-leader-list xc-flex__grid -center -middle">        
+<leader-list class="c-leader-list xc-flex__grid -center -middle">        
 
-    <div id="leaderList" class="c-leader-list__wrap xc-flex__cell -column -col-12of12 -col-sm-10of12 -col-lg-10of12" ng-controller="LeaderListController">
+    <div id="leaderList" class="c-leader-list__wrap xc-flex__cell -column -col-12of12 -col-sm-10of12 -col-lg-10of12">
 
             <h2 class="c-leader-list__heading">Your Chapter's Leaders</h2>
 
+            <p>{{$ctrl.data[0]}}<br/>
+            {{$ctrl.test}}<br/>
+            {{$ctrl.test2}}</p>
+
             <div class="xc-flex__grid">
 
-                <div class="xc-flex__cell -col-6of12 -col-sm-3of12">
-                    <div class="c-snapshot-item">
+                <div ng-repeat="item in $ctrl.data[0] track by $index" class="xc-flex__cell -col-6of12 -col-sm-3of12">
+                        <div class="c-snapshot-item">
 
-                        <div class="c-snapshot-item__img-wrap">
-                            <!-- This image could also reference the desired icon for P, VP, Sec, etc. -->
-                            <img class="c-snapshot-item__img" src="assets/images/mauricemoss.jpg" />
-                        </div>
-                    
-                        <h3 class="c-snapshot-item__heading">{{name}}</h3>
-                    
-                        <p class="c-snapshot-item__description">President</p>
+                            <div class="c-snapshot-item__img-wrap">
+                                <!-- This image could also reference the desired icon for P, VP, Sec, etc. -->
+                                <img class="c-snapshot-item__img" src="assets/images/mauricemoss.jpg" />
+                            </div>
                         
-                        <a class="c-snapshot-item__mailto" href="mailto:" title="Email Chapter Leader">
-                            <span class="fa fa-envelope"></span>
-                            Send Email
-                        </a>
-                    
-                    </div>
+                            <h3 class="c-snapshot-item__heading">{{item.name}}</h3>
+                        
+                            <p class="c-snapshot-item__description">President</p>
+                            
+                            <a class="c-snapshot-item__mailto" href="mailto:" title="Email Chapter Leader">
+                                <span class="fa fa-envelope"></span>
+                                Send Email
+                            </a>
+                        
+                        </div>
                 </div>
 
             </div>
@@ -72,4 +76,4 @@
             </button>
         
     </div>
-</div>
+</leader-list>

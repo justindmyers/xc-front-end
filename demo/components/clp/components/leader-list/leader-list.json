@@ -1,0 +1,50 @@
+[
+    {
+        "profile": "assets/images/mauricemoss.jpg",
+        "name": "Mr. Michael Podemski",
+        "title": "President",
+        "email": "test@xcentium.com"
+    },
+    {
+        "profile": "assets/images/mauricemoss.jpg",
+        "name": "Ms. Pamel Nigro",
+        "title": "Vice President, Marketing",
+        "email": "test@xcentium.com"
+    },
+    {
+        "profile": "assets/images/mauricemoss.jpg",
+        "name": "Mrs. Vesela p. Zlateva",
+        "title": "Secretary",
+        "email": "test@xcentium.com"
+    },
+    {
+        "profile": "assets/images/mauricemoss.jpg",
+        "name": "Mr. David Allen Baken",
+        "title": "Treasurer",
+        "email": "test@xcentium.com"
+    },
+    {
+        "profile": "assets/images/mauricemoss.jpg",
+        "name": "Mr. Nathan A. Anderson",
+        "title": "Membership Directory",
+        "email": "test@xcentium.com"
+    },
+    {
+        "profile": "assets/images/mauricemoss.jpg",
+        "name": "Mrs. Judy C. Quinton",
+        "title": "Research Director",
+        "email": "test@xcentium.com"
+    },
+    {
+        "profile": "assets/images/mauricemoss.jpg",
+        "name": "Mr. Kenneth Charles Scmidt",
+        "title": "Research Director",
+        "email": "test@xcentium.com"
+    },
+    {
+        "profile": "assets/images/mauricemoss.jpg",
+        "name": "Mr. Lamar Jason Burrell",
+        "title": "Program Director",
+        "email": "test@xcentium.com"
+    }
+]

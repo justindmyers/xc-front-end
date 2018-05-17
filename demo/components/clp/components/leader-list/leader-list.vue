@@ -4,10 +4,11 @@
 </template>
 
 <script>
+    import leaderSnapshot from './leader-list.html';
     export default {
         data () {
             return {
-                rawHTML: require('./leader-list.html')
+                rawHTML: '<div id="ngApp">' + leaderSnapshot + '</div>'
             }
         }
     }
