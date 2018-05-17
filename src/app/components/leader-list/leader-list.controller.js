@@ -1,11 +1,11 @@
 class LeaderListController {
-    constructor($http, $window) {
+    constructor($http, $window, $element) {
         'ngInject';
         this.$http = $http;
         this.$window = $window;
+        this.$element = $element;
 
         this.data = [];
-        this.test = 'I dont really care';
     }
 
     $onInit() {
@@ -15,7 +15,6 @@ class LeaderListController {
         }).then((response) => {
             this.data = response.data;
         });
-        this.test2 = 'whatever';
     }
 }
 

@@ -35,21 +35,30 @@ const router = new VueRouter({
     routes
 });
 
+let appInitialized = false;
+
 router.afterEach((to, from) => {
-    setTimeout(() => {
-        var body = angular.element(document);
-        var $rootScope = body.scope().$root;
-        angular.element(document).injector().invoke(function($compile) {
-            var $rootEl = $('#ngApp');
-            var html = $compile(angular.copy($rootEl[0]))($rootScope);
-            if($rootEl.length) {
-                $rootEl[0].outerHTML = html[0].outerHTML;
-                // $rootScope.$digest();
-                $rootScope.$apply(() => {});
-            }
-        });
-        toggleCollapse();
-    }, 500);
+    if(appInitialized) {
+        setTimeout(() => {
+            const body = angular.element(document);
+            const $rootScope = body.scope().$root;
+
+            angular.element(document).injector().invoke(($compile) => {
+                const $rootEl = $('#ngApp');
+
+                if($rootEl.length) {
+                    var html = $compile(angular.copy($rootEl[0]))($rootScope);
+
+                    $rootScope.$digest();
+                    $rootEl.replaceWith(html[0]);
+                }
+            });
+
+            toggleCollapse();
+        }, 100);
+    } else {
+        appInitialized = true;
+    }
 });
 
 new Vue({
