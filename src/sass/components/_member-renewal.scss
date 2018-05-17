@@ -10,6 +10,15 @@
     &__wrap {
         padding: 2rem 0;
     }
+
+    &__stat-wrap {
+        position: relative;
+        height: 225px;
+        width: 225px;
+        border-radius: 100%;
+        border: 1px solid #b3b1b3;
+        margin: 0 auto;
+    }
 }
 
 @media (min-width: 768px) {
