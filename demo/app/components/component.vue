@@ -12,8 +12,6 @@
 </script>
 
 <style lang="scss" scoped>
-    @import "~src/sass/base";
-
     .component {
         margin: 80px 0;
 

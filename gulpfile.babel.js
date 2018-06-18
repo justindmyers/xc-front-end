@@ -16,12 +16,9 @@ let appRoot = 'app';
 
 // map of all paths
 let paths = {
-    js: path.join(root, appRoot, 'components', '**/*!(.spec.js).js'), // exclude spec files
-    html: path.join(root, appRoot, '**/*.html'),
     entry: {
         dev: path.join(__dirname, root, appRoot, 'index.js'),
-        prod: path.join(__dirname, root, 'index.js'),
-        editor: path.join(__dirname, root, 'editor.js')
+        prod: path.join(__dirname, root, 'index.js')
     },
     dist: path.join(__dirname, 'dist')
 };
@@ -42,7 +39,6 @@ gulp.task('demo-prod', ['clean'], (cb) => {
 gulp.task('prod', ['clean'], (cb) => {
     const config = require('./config/webpack.dist.config');
     config.entry.app = paths.entry.prod;
-    config.entry.editor = paths.entry.editor;
 
     createDistFiles(config, cb);
 });

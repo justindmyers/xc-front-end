@@ -1,13 +1,11 @@
-# ISACA Component Library
+# XC Component Library
 
-Documentation for the ISACA Component Library
+Documentation for the XC Component Library
 
 ## Getting Started
 
-The ISACA Component Library is built from the Heart.org Front-end repository.
-
 To build and run this project locally, clone the repository from:
-[`https://aha-bt.visualstudio.com/Sitecore/Heart.org/_git/Heart.org%20Front-End`](https://aha-bt.visualstudio.com/Sitecore/Heart.org/_git/Heart.org%20Front-End)
+[`https://github.com/justindmyers/xc-front-end`](https://github.com/justindmyers/xc-front-end)
 
 In the main project directory, run `npm install` to install all dependencies
 

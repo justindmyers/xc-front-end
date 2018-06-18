@@ -1,8 +1,8 @@
 // Import all demo navigation
 
-import HomePages from './home/home.js';
+import HomePages from './static/home/home.js';
 import ComponentPages from './components/components.js';
-import LayoutPages from './layout/layouts.js';
+import LayoutPages from './layouts/layouts.js';
 
 const routes = [].concat(HomePages, ComponentPages, LayoutPages);
 

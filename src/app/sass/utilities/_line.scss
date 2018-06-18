@@ -1,0 +1,13 @@
+@import "~@/sass/base";
+
+.h-line {
+    &:before {
+        content: '';
+        display: block;
+        background-color: #11869b;
+        height: 4px;
+        position: absolute;
+        width: 100px;
+        top: -25px;
+    }
+}

@@ -1,95 +1,48 @@
-import ComponentNavigation from './component-navigation';
+import { CreateDynamicNavigation } from 'demo/app/util/navigation';
 
-import ButtonLinkBar from 'demo/pages/components/button-link-bar.vue';
-import DocumentRepository from 'demo/pages/components/document-repository.vue';
-import MemberBreakdown from 'demo/pages/components/member-breakdown.vue';
-import MembeRenewal from 'demo/pages/components/member-renewal.vue';
-import LeaderList from 'demo/pages/components/leader-list.vue';
-import LeaderSnapshot from 'demo/pages/components/leader-snapshot-item.vue';
-import Updates from 'demo/pages/components/updates.vue';
+import Hero from 'demo/pages/components/hero.vue';
+import Navbar from 'demo/pages/components/navbar.vue';
+import NewsGrid from 'demo/pages/components/news-grid.vue';
+import Testimonial from 'demo/pages/components/testimonial.vue';
+import VideoPromo from 'demo/pages/components/video-promo.vue';
 
-const ComponentPages = [
+const ComponentPages = CreateDynamicNavigation([
     {
         path: '/components',
-        name: 'CLP',
-        components: {
-            default: {
-                template: '<router-view></router-view>'
-            },
-            'sidebar-nav': ComponentNavigation
-        },
+        name: 'Components',
         children: [
             {
                 path: '',
-                redirect: 'button-link-bar',
-                excludeFromNav: true
+                excludeFromNav: true,
+                redirect: 'hero'
             },
             {
-                path: 'button-link-bar',
-                name: 'Button Link Bar',
-                component: ButtonLinkBar
+                path: 'hero',
+                name: 'Hero',
+                component: Hero
             },
             {
-                path: 'updates',
-                name: 'Updates',
-                component: Updates
+                path: 'navbar',
+                name: 'Navbar',
+                component: Navbar
             },
             {
-                path: 'document-repository',
-                name: 'Document Repository',
-                component: DocumentRepository
+                path: 'news-grid',
+                name: 'News Grid',
+                component: NewsGrid
             },
             {
-                path: 'member-breakdown',
-                name: 'Member Breakdown',
-                component: MemberBreakdown
+                path: 'testimonial',
+                name: 'Testimonial',
+                component: Testimonial
             },
             {
-                path: 'member-renewal',
-                name: 'Member Renewal',
-                component: MembeRenewal
-            },
-            {
-                path: 'leader-snapshot-item',
-                name: 'Leader Snapshot Item',
-                component: LeaderSnapshot
-            },
-            {
-                path: 'leader-list',
-                name: 'Leader List',
-                component: LeaderList
+                path: 'video-promo',
+                name: 'Video Promo',
+                component: VideoPromo
             }
-            /*
-            {
-                path: 'article',
-                name: 'Article',
-                components: {
-                    default: {
-                        template: '<router-view></router-view>'
-                    },
-                    'sidebar-nav': ComponentNavigation
-                },
-                children: [
-                    {
-                        path: 'article-large',
-                        name: 'Main Nav',
-                        component: MainNav
-                    },
-                    {
-                        path: 'top-nav',
-                        name: 'Top Nav',
-                        component: TopNav
-                    },
-                    {
-                        path: 'affiliate-nav',
-                        name: 'Affiliate Nav',
-                        component: AffiliateNav
-                    }
-                ]
-            }
-            */
         ]
     }
-];
+]);
 
 export default ComponentPages;

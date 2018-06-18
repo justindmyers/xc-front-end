@@ -1,13 +1,4 @@
-// Import font awesomer
-$fa-font-path:  "./assets/fonts";
-@import '~font-awesome/scss/font-awesome';
-
 // Import live styling assets
-.app__content {
-    @import '../../live-assets/main';
-    @import 'src/sass/style';
-}
-
 html, body {
     margin: 0;
     padding: 0;
@@ -57,6 +48,11 @@ body > iframe {
         color: #f0f0f0;
         cursor: pointer;
         text-decoration: none;
+
+        &:hover, &:focus {
+            color: #f0f0f0;
+            text-decoration: underline;
+        }
 
         &.router-link-exact-active {
             font-weight: 600;
@@ -115,10 +111,6 @@ body > iframe {
     &__sidebar {
         background: #34444C;
     }
-
-    &__content {
-        // padding: 40px;
-    }
 }
 
 @media only screen and (min-width: 768px) {
@@ -140,8 +132,6 @@ body > iframe {
 
         &__sidebar, &__content {
             flex-basis: 0;
-            -webkit-box-flex: 1;
-            -ms-flex-positive: 1;
             flex-grow: 1;
         }
     }

@@ -1,3 +1,0 @@
-<template>
-    <updates></updates>
-</template>

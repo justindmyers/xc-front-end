@@ -19,7 +19,6 @@ module.exports = {
         },
         extensions: ['*', '.js', '.vue', '.json']
     },
-    // externals: [nodeExternals()],
 
     module: {
         rules: [
@@ -81,7 +80,7 @@ module.exports = {
     },
     plugins: [
         new HtmlWebpackPlugin({
-            template: 'demo/index.html',
+            template: 'demo/app/index.html',
             filename: 'index.html',
             inject: 'body',
             hash: true
@@ -102,7 +101,6 @@ module.exports = {
 
         new webpack.ProvidePlugin({
             $: 'jquery',
-            JQuery: 'jquery',
             jQuery: 'jquery'
         })
     ]

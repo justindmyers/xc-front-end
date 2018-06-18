@@ -1,0 +1,66 @@
+<?xml version="1.0" encoding="UTF-8" standalone="no"?>
+<svg
+   xmlns="http://www.w3.org/2000/svg"
+   width="24px"
+   height="24px"
+   viewBox="0 0 16 16">
+  <defs
+     id="defs827">
+    <circle
+       id="path-1"
+       cx="24"
+       cy="24"
+       r="24" />
+    <filter
+       x="-0.072999999"
+       y="-0.051999997"
+       width="1.146"
+       height="1.146"
+       filterUnits="objectBoundingBox"
+       id="filter-2">
+      <feOffset
+         dx="0"
+         dy="1"
+         in="SourceAlpha"
+         result="shadowOffsetOuter1"
+         id="feOffset820" />
+      <feGaussianBlur
+         stdDeviation="1"
+         in="shadowOffsetOuter1"
+         result="shadowBlurOuter1"
+         id="feGaussianBlur822" />
+      <feColorMatrix
+         values="0 0 0 0 0   0 0 0 0 0   0 0 0 0 0  0 0 0 0.16 0"
+         type="matrix"
+         in="shadowBlurOuter1"
+         id="feColorMatrix824" />
+    </filter>
+    <filter
+       x="-0.072999999"
+       y="-0.051999997"
+       width="1.146"
+       height="1.146"
+       filterUnits="objectBoundingBox"
+       id="filter-2-4">
+      <feOffset
+         dx="0"
+         dy="1"
+         in="SourceAlpha"
+         result="shadowOffsetOuter1"
+         id="feOffset820-3" />
+      <feGaussianBlur
+         stdDeviation="1"
+         in="shadowOffsetOuter1"
+         result="shadowBlurOuter1"
+         id="feGaussianBlur822-6" />
+      <feColorMatrix
+         values="0 0 0 0 0   0 0 0 0 0   0 0 0 0 0  0 0 0 0.16 0"
+         type="matrix"
+         in="shadowBlurOuter1"
+         id="feColorMatrix824-5" />
+    </filter>
+  </defs>
+  <path d="m 4.1241481,13.333698 -0.118571,1.349866 C 3.9415871,15.410588 4.4356471,16 5.1088541,16 h 5.7557699 c 0.673263,0 1.180102,-0.590445 1.132248,-1.31911 l -0.0887,-1.347557 H 4.1241521 Z" />
+  <path d="M 16,13.44401 V 6.556047 C 16,5.880789 15.4534,5.333333 14.779197,5.333333 H 12.659571 V 8.591317 H 3.3404851 V 5.333333 H 1.220803 C 0.5466,5.333333 0,5.880789 0,6.556047 v 6.887906 c 0,0.675258 0.5466,1.222714 1.220803,1.222714 h 2.1196261 v -2.113166 h 9.3188049 v 2.113166 h 2.119627 C 15.4534,14.666723 16,14.119267 16,13.44401 Z M 14.344599,7.622577 c -0.315582,0 -0.571627,-0.256165 -0.571627,-0.572241 0,-0.316075 0.256046,-0.57224 0.571627,-0.57224 0.315301,0 0.571346,0.256165 0.571346,0.57224 0,0.316076 -0.256046,0.572241 -0.571346,0.572241 z" />
+  <path d="M 11.333215,2.377152 V 2.096163 L 9.2609895,0 h -0.296349 c -5.94e-4,0 -5.94e-4,0 -5.94e-4,0 -5.95e-4,0 -5.95e-4,0 -5.95e-4,0 H 5.1162131 c -0.61556,0 -1.116213,0.524664 -1.116213,1.169267 V 8 H 11.333161 V 2.399665 c 5.4e-5,-0.0074 3.24e-4,-0.0148 5.4e-5,-0.02251 z m -1.096863,4.38848 c 0,0.01049 -0.0076,0.01786 -0.01854,0.01786 H 5.1161581 c -0.01119,0 -0.01913,-0.0074 -0.01913,-0.01786 V 1.168983 c 0,-0.01049 0.0082,-0.0182 0.01913,-0.0182 h 3.2293004 v 0.703579 c 0,0.880282 0.719658,1.199833 1.204096,1.199833 h 0.6867425 c 5.5e-5,0 5.5e-5,3.71144 5.5e-5,3.71144 z" />
+</svg>

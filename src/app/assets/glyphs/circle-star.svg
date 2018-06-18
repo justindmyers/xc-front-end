@@ -1,0 +1,12 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<svg width="14px" height="14px" viewBox="0 0 14 14" version="1.1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink">
+    <!-- Generator: Sketch 48.2 (47327) - http://www.bohemiancoding.com/sketch -->
+    <title>Circle Star</title>
+    <desc>Created with Sketch.</desc>
+    <defs></defs>
+    <g id="xc_UI_Kit_Page2" stroke="none" stroke-width="1" fill="none" fill-rule="evenodd" transform="translate(-387.000000, -5065.000000)">
+        <g id="Circle-Star" transform="translate(387.000000, 5065.000000)" fill="#48874A" fill-rule="nonzero">
+            <path d="M7,14 C3.13425,14 0,10.86575 0,7 C0,3.13425 3.13425,0 7,0 C10.86575,0 14,3.13425 14,7 C14,10.86575 10.86575,14 7,14 Z M6.99955458,8.80373459 L9.47243755,10 L9.00016817,7.4669072 L11,5.67342063 L8.2360506,5.30428653 L6.99964548,3 L5.7639494,5.30428653 L3,5.67342063 L4.99983183,7.4669072 L4.52756245,10 L6.99955458,8.80373459 Z" id="Shape"></path>
+        </g>
+    </g>
+</svg>
